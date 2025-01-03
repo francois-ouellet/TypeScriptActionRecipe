@@ -25683,7 +25683,7 @@ async function run() {
         core.debug(new Date().toTimeString());
         // Set outputs for other workflow steps to use
         core.setOutput('time', new Date().toTimeString());
-        core.summary
+        await core.summary
             .addHeading('Advanced Job Summary', 'h2')
             .addImage('https://octodex.github.com/images/droidtocat.png', 'Droidtocat', {
             width: '64',
